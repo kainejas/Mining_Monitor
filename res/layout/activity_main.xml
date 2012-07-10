@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+     
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="5dp"
+    android:orientation="vertical" >
+   
+    <TextView
+        android:id="@+id/username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:text="Account: "
+        tools:context=".MainActivity" />
+   
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+     <TextView
+         android:id="@+id/hashrate"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:padding="1dp"
+         android:text="Hashrate: "
+         android:textSize="20dip"
+         tools:context=".MainActivity" />
+     
+   
+      <TextView
+          android:id="@+id/estimated_reward"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:padding="1dp"
+          android:text="Estimated: "
+          android:textSize="20dip"
+          tools:context=".MainActivity" />
+      
+          <TextView
+          android:id="@+id/total_reward"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:padding="1dp"
+          android:text="Total: "
+          android:textSize="20dip"
+          tools:context=".MainActivity" />
+          
+               <TextView
+          android:id="@+id/worker"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:padding="1dp"
+          android:text=""
+          android:textSize="13dip"
+          tools:context=".MainActivity" />
+       
+       	  
+</LinearLayout>
+
+ 
+
+          
+      <RelativeLayout 
+          android:id="@+id/banner_layout"  
+android:layout_width="wrap_content" 
+android:layout_height="wrap_content"         
+android:layout_centerHorizontal="true"
+xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads" >
+               
+             <Button
+    android:id="@+id/button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_above="@+id/adView"
+    android:layout_alignParentLeft="true"
+    android:onClick="refresh"
+    android:text="Refresh" />
+
+<com.google.ads.AdView android:id="@+id/adView"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"
+                         android:layout_alignParentBottom="true"
+                         ads:adUnitId="a14ff78e6c7ed6c"
+                         ads:adSize="BANNER"
+                         ads:loadAdOnCreate="true"/>
+
+</RelativeLayout>
+
+  
+   
+</LinearLayout>
+
+
